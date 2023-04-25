@@ -1,0 +1,17 @@
+.icono {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+}
+
+.icono_opciones {
+    background-image: url(/src/assets/img/opciones.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icono_x {
+    background-image: url(/src/assets/img/x.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}

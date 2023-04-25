@@ -1,0 +1,22 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formulario-titulo {
+    align-self: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--letra-oscura);
+}
+
+.formulario-boton {
+    align-self: center;
+}
+
+.formulario-grupo {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}

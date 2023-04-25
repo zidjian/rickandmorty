@@ -1,0 +1,13 @@
+.boton {
+    padding: .5rem 2rem;
+    color: var(--letra-clara);
+    background: var(--primero);
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
