@@ -1,0 +1,53 @@
+.tarjeta {
+    position: relative;
+    border: solid 2px var(--primero);
+    border-radius: .5rem;
+    overflow: hidden;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.tarjeta-imagen {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tarjeta-contenido {
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.tarjeta-nombre {
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--letra-oscura);
+}
+
+.tarjeta-ubicación {
+    font-weight: 300;
+    color: var(--letra-oscura);
+}
+
+.tarjeta-rotulo {
+    color: var(--cuarto);
+    font-weight: 400;
+}
+
+.tarjeta-etiqueta {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: .5rem;
+    box-sizing: border-box;
+    background-color: var(--letra-oscura);
+    color: var(--letra-clara);
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}

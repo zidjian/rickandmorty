@@ -1,6 +1,8 @@
 .boton {
     padding: .5rem 2rem;
-    color: var(--letra-clara);
+    font-size: var(--cuerpo);
+    line-height: 1.5;
+    color: var(--letra-oscura);
     background: var(--primero);
     margin: 0 auto;
     outline: none;

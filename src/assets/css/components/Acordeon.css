@@ -1,0 +1,68 @@
+/* Acordeon */
+
+.acordeon {
+    
+}
+
+.acordeon-elemento {
+    overflow: hidden;
+}
+
+.acordeon-titulo {
+    background: var(--segundo);
+    color: var(--letra-oscura);
+    padding: .5rem 0;
+    text-align: center;
+}
+
+.acordeon-desplegado {
+    display: initial;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    box-sizing: border-box;
+}
+
+.acordeon-desplegado.activo {
+    display: none;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.acordeon-checkbox {
+    display: none;
+}
+
+.acordeon-radio {
+    display: none;
+}
+
+.acordeon-radio:not(:checked) + .acordeon-radiorotulo {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    border: solid 1px var(--primero);
+    box-sizing: border-box;
+    display: inline-block;
+    color: var(--letra-oscura);
+}
+
+.acordeon-radio:checked + .acordeon-radiorotulo {
+    background: var(--primero);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    box-sizing: border-box;
+    display: inline-block;
+    color: var(--letra-oscura);
+}

@@ -1,0 +1,35 @@
+.filtro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.filtro-titulo {
+    text-align: center;
+    padding: .5rem 0 0;
+    color: var(--letra-oscura);
+    font-weight: 700;
+    font-size: var(--titulo-2);
+}
+
+.filtro-limpiar {
+    color: var(--tercero);
+    border-bottom: solid 1px var(--tercero);
+    text-align: center;
+    display: inline-block;
+    line-height: 1.5;
+    margin: 1rem auto;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+    .filtro {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+}

@@ -1,6 +1,13 @@
 :root {
-    --primero: #4361ee;
+    --primero: #50CF04;
+    --segundo: #D0FCB6;
+    --tercero: #0d6efd;
+    --cuarto: #287201;
     --letra-clara: #fff;
     --letra-oscura: #424242;
     --letra-semioscura: #828282;
+    --titulo-1: 1.4rem;
+    --titulo-2: 1.3rem;
+    --titulo-3: 1.2rem;
+    --cuerpo: 1rem;
 }

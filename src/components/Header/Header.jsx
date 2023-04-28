@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo.svg';
 
 // Estilos
-
 import '../../assets/css/components/Header.css';
 import '../../assets/css/components/Icono.css';
 

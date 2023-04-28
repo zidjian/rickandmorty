@@ -73,6 +73,7 @@
 }
 
 .logo-texto {
+    color: var(--cuarto);
     margin-left: .5rem;
     font-weight: 700;
     font-size: 1.5rem;
