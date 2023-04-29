@@ -1,15 +1,11 @@
 import { useState } from 'react';
 import '../../assets/css/components/Acordeon.css';
 
-export function Acordeon({tipo, valores, actualizar}) {    
+export function Acordeon({tipo, valores, actualizador, actualizar}) {    
     const [desplegar, setDesplegar] =  useState(true);
     
     function toggleAcordeon() {
         setDesplegar(!desplegar);
-    }
-
-    function actualizar_filtro(valor) {
-        actualizar(valor);
     }
 
     return (
@@ -23,7 +19,7 @@ export function Acordeon({tipo, valores, actualizar}) {
                     return (
                         <div className="acordeon-inputgrupo" key={indice}>
                             <input type="radio" className="acordeon-radio" name={tipo} id={tipo+'-'+valor} />
-                            <label htmlFor={tipo+'-'+valor} className='acordeon-radiorotulo' onClick={() => { actualizar_filtro(valor) }} >{valor}</label>
+                            <label htmlFor={tipo+'-'+valor} className='acordeon-radiorotulo' onClick={() => { actualizador(valor, actualizar) }} >{valor}</label>
                         </div>
                     );
                 }) }

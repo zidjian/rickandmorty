@@ -3,8 +3,9 @@ import '../../assets/css/components/Tarjetas.css';
 
 // Componentes Externos
 import { Tarjeta } from "../Tarjeta/Tarjeta";
+import ReactPaginate from 'react-paginate';
 
-export function Tarjetas({personajes}) {
+export function Tarjetas({personajes, manejadorPaginacion, paginas_total, pagina_actual}) {
     if(personajes) {
         return (
             <div className="tarjetas">
@@ -15,6 +16,24 @@ export function Tarjetas({personajes}) {
                         );
                     }) 
                 }
+
+                <ReactPaginate
+                    breakLabel="..."
+                    nextLabel=">"
+                    onPageChange={manejadorPaginacion}
+                    pageRangeDisplayed={0}
+                    marginPagesDisplayed={1}
+                    pageCount={paginas_total}
+                    previousLabel="<"
+                    renderOnZeroPageCount={null}
+                    containerClassName='paginacion'
+                    pageLinkClassName='pagina'
+                    previousLinkClassName='pagina activo'
+                    nextLinkClassName='pagina activo'
+                    activeLinkClassName='activo'
+                    disabledLinkClassName='inactivo'
+                    forcePage={pagina_actual}
+                />
             </div>
         );
     } else {
