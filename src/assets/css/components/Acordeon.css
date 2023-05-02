@@ -11,9 +11,12 @@
 .acordeon-titulo {
     background: var(--segundo);
     color: var(--letra-oscura);
-    padding: .5rem 0;
+    padding: .5rem 1rem ;
     text-align: center;
     cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .acordeon-desplegado {

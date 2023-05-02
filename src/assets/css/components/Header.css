@@ -26,10 +26,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
 
-.navmobil.activo {
+.navmobil.mostrar {
     right: 0;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
 
 .navmobil-lista {
@@ -50,8 +61,8 @@
 
 .menumobil-cerrar {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: .5rem;
+    right: .5rem;
 }
 
 .togglemobil {

@@ -1,0 +1,13 @@
+.piepagina {
+    text-align: center;
+}
+
+.footer-conteido {
+    font-size: 1.2rem;
+}
+
+.piepagina-desarrollador {
+    color: var(--primero);
+    font-weight: 700;
+    text-decoration: none;
+}

@@ -8,8 +8,9 @@
 .formulario-titulo {
     align-self: center;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: var(--titulo-1);
     color: var(--letra-oscura);
+    margin-top: 1rem;
 }
 
 .formulario-boton {

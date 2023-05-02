@@ -7,7 +7,7 @@
     text-align: center;
     font-weight: 700;
     color: var(--letra-oscura);
-    font-size: 1.2rem;
+    font-size: var(--titulo-1);
 }
 
 .principal-contenido {
