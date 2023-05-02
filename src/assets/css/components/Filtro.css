@@ -19,6 +19,7 @@
     display: inline-block;
     line-height: 1.5;
     margin: 1rem auto;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {

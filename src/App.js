@@ -10,15 +10,13 @@ import './assets/css/base/base.css'
 function App() {
 
     return (
-        <>
-            <Router>
+        <Router>
             <Header />
-                <Routes>
-                    <Route path="/" element={<Personajes />} />
-                    <Route path="*" element={<Error404 />} />
-                </Routes>
-            </Router>
-        </>
+            <Routes>
+                <Route path="/" element={<Personajes />} />
+                <Route path="*" element={<Error404 />} />
+            </Routes>
+        </Router>
     );
 }
 

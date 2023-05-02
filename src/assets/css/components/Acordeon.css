@@ -13,6 +13,7 @@
     color: var(--letra-oscura);
     padding: .5rem 0;
     text-align: center;
+    cursor:pointer;
 }
 
 .acordeon-desplegado {
@@ -52,6 +53,7 @@
     box-sizing: border-box;
     display: inline-block;
     color: var(--letra-oscura);
+    cursor: pointer;
 }
 
 .acordeon-radio:checked + .acordeon-radiorotulo {
@@ -65,4 +67,5 @@
     box-sizing: border-box;
     display: inline-block;
     color: var(--letra-oscura);
+    cursor: pointer;
 }

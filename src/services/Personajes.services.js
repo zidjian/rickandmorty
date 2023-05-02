@@ -5,6 +5,11 @@ export const api = axios.create({
 });
 
 export const listarPersonajes = async (url, setDatos) => {
-    const respuesta = await api.get(url);
-    setDatos(respuesta.data);
+    await api.get(url)
+        .then(function(respuesta) {
+            setDatos(respuesta.data);
+        })
+        .catch(function(error) {
+            setDatos({ results: [], info: {}});
+        });
 } 

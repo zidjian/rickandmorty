@@ -47,18 +47,21 @@ export function Personajes() {
     }
 
     function manejadorPaginacion(e) {
-        setpagina(e.selected);
+        setpagina(e.selected + 1);
     }
 
     function resetearFiltro() {
-        const radios = document.querySelectorAll('acordeon-radio');
+        setBuscaqueda('');
+        setEstado('');
+        setEspecie('');
+        setGenero('');
+        setpagina(1);
+        const radios = document.querySelectorAll('.acordeon-radio');
         radios.forEach(radio => {
             radio.checked = false
         });
-        console.log('hola')
     }
 
-    // console.log(personajes.info.count);
     if (personajes.results && personajes.info) {
         return (
             <main className="principal">
@@ -66,14 +69,14 @@ export function Personajes() {
                     <Buscador valor={busqueda} actualizar={setBuscaqueda} />
                     <div className="filtro">
                         <div className="filtro-titulo">Filtrar</div>
-                        <div className="filtro-limpiar">Limpiar filtros</div>
+                        <div className="filtro-limpiar" onClick={() => {resetearFiltro()}}>Limpiar filtros</div>
                         <div className="acordeon">
                             <Acordeon tipo='estado' valores={v_estado} actualizador={actualizar_filtro} actualizar={setEstado} />
                             <Acordeon tipo='especie' valores={v_especie} actualizador={actualizar_filtro} actualizar={setEspecie} />
                             <Acordeon tipo='genero' valores={v_genero} actualizador={actualizar_filtro} actualizar={setGenero} />
                         </div>
                     </div>
-                    <Tarjetas personajes={personajes.results} manejadorPaginacion={manejadorPaginacion} paginas_total={personajes.info.pages} pagina_actual={pagina - 1} />
+                    <Tarjetas personajes={personajes.results} manejadorPaginacion={manejadorPaginacion} paginas_total={personajes.info.pages} pagina_actual={pagina} />
                 </div>
             </main>
         );

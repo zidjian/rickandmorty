@@ -6,7 +6,7 @@ import { Tarjeta } from "../Tarjeta/Tarjeta";
 import ReactPaginate from 'react-paginate';
 
 export function Tarjetas({personajes, manejadorPaginacion, paginas_total, pagina_actual}) {
-    if(personajes) {
+    if(personajes && personajes.length > 0) {
         return (
             <div className="tarjetas">
                 {
@@ -15,7 +15,7 @@ export function Tarjetas({personajes, manejadorPaginacion, paginas_total, pagina
                             <Tarjeta personaje={personaje} key={indice} />
                         );
                     }) 
-                }
+                } 
 
                 <ReactPaginate
                     breakLabel="..."
@@ -32,13 +32,15 @@ export function Tarjetas({personajes, manejadorPaginacion, paginas_total, pagina
                     nextLinkClassName='pagina activo'
                     activeLinkClassName='activo'
                     disabledLinkClassName='inactivo'
-                    forcePage={pagina_actual}
+                    forcePage={pagina_actual - 1}
                 />
             </div>
         );
     } else {
         return (
-            <></>
+            <div className="sintarjetas">
+                No hay elementos que coincidan con la busqueda o filtros 
+            </div>
         );
     }
 }

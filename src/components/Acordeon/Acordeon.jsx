@@ -1,20 +1,19 @@
-import { useState } from 'react';
 import '../../assets/css/components/Acordeon.css';
 
 export function Acordeon({tipo, valores, actualizador, actualizar}) {    
-    const [desplegar, setDesplegar] =  useState(true);
     
-    function toggleAcordeon() {
-        setDesplegar(!desplegar);
+    function toggleAcordeon(evento) {
+        const siguiente_elemento = evento.target.nextElementSibling;
+        siguiente_elemento.classList.toggle('activo')
     }
 
     return (
         <div className="acordeon-elemento" >
-            <div className="acordeon-titulo" onClick={toggleAcordeon} >
-                <input type="checkbox" className="acordeon-checkbox" id='desplegado' value={desplegar} />
-                <label htmlFor='desplegado' className='acordeon-checkboxrotulo' >{tipo.toUpperCase()}</label>
+            <div className="acordeon-titulo" onClick={(e) => {toggleAcordeon(e)}} >
+                {/* <input type="checkbox" className="acordeon-checkbox" id='desplegado' value={desplegar} /> */}
+                {tipo.toUpperCase()}
             </div>
-            <div className={desplegar ? 'acordeon-desplegado activo' : 'acordeon-desplegado'} >
+            <div className='acordeon-desplegado activo' >
                 { valores.map((valor, indice) => {
                     return (
                         <div className="acordeon-inputgrupo" key={indice}>

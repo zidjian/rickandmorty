@@ -7,7 +7,7 @@ export function CampoGrupo({ valor, actualizar }) {
     return (
         <>
             <label htmlFor="" className="campo-rotulo">Buscador</label>
-            <input type="text" className="campo" placeholder="Buscador por personajes..." onChange={(e) => { actualizarValor(e.target.value) }} />
+            <input type="text" className="campo" placeholder="Buscador por personajes..." onChange={(e) => { actualizarValor(e.target.value) }} value={valor} />
         </>
     );
 }

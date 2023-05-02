@@ -1,6 +1,6 @@
 .tarjeta {
     position: relative;
-    border: solid 2px var(--primero);
+    border: solid 1px var(--primero);
     border-radius: .5rem;
     overflow: hidden;
     -webkit-border-radius: .5rem;
