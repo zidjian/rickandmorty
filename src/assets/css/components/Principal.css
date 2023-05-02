@@ -2,6 +2,14 @@
 
 }
 
+.principal-titulo {
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: 700;
+    color: var(--letra-oscura);
+    font-size: 1.2rem;
+}
+
 .principal-contenido {
     display: flex;
     gap: 1rem;

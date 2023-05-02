@@ -1,0 +1,7 @@
+.selector {
+    padding: .5rem 1rem;
+    border: solid 1px var(--letra-oscura);
+    color: var(--letra-oscura);
+    background: var(--letra-clara);
+    outline-color: var(--primero);
+}

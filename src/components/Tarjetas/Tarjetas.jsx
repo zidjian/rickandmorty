@@ -17,23 +17,26 @@ export function Tarjetas({personajes, manejadorPaginacion, paginas_total, pagina
                     }) 
                 } 
 
-                <ReactPaginate
-                    breakLabel="..."
-                    nextLabel=">"
-                    onPageChange={manejadorPaginacion}
-                    pageRangeDisplayed={0}
-                    marginPagesDisplayed={1}
-                    pageCount={paginas_total}
-                    previousLabel="<"
-                    renderOnZeroPageCount={null}
-                    containerClassName='paginacion'
-                    pageLinkClassName='pagina'
-                    previousLinkClassName='pagina activo'
-                    nextLinkClassName='pagina activo'
-                    activeLinkClassName='activo'
-                    disabledLinkClassName='inactivo'
-                    forcePage={pagina_actual - 1}
-                />
+                {
+                    manejadorPaginacion &&
+                    <ReactPaginate
+                        breakLabel="..."
+                        nextLabel=">"
+                        onPageChange={manejadorPaginacion}
+                        pageRangeDisplayed={0}
+                        marginPagesDisplayed={1}
+                        pageCount={paginas_total}
+                        previousLabel="<"
+                        renderOnZeroPageCount={null}
+                        containerClassName='paginacion'
+                        pageLinkClassName='pagina'
+                        previousLinkClassName='pagina activo'
+                        nextLinkClassName='pagina activo'
+                        activeLinkClassName='activo'
+                        disabledLinkClassName='inactivo'
+                        forcePage={pagina_actual - 1}
+                    />
+                }
             </div>
         );
     } else {

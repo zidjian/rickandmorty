@@ -11,7 +11,6 @@ export function Buscador({valor, actualizar}) {
             <div className="formulario-grupo">
                 <CampoGrupo valor={valor} actualizar={actualizar} />
             </div>
-            <button className="boton">Buscar</button>
         </form>
     );
 }

@@ -1,14 +1,14 @@
 // Estilos
-import '../../assets/css/components/Principal.css';
-import '../../assets/css/components/Filtro.css';
+import '../assets/css/components/Principal.css';
+import '../assets/css/components/Filtro.css';
 
-import { Buscador } from "../Buscador/Buscador";
-import { Acordeon } from "../Acordeon/Acordeon";
-import { Tarjetas } from "../Tarjetas/Tarjetas";
+import { Buscador } from "../components/Buscador/Buscador";
+import { Acordeon } from "../components/Acordeon/Acordeon";
+import { Tarjetas } from "../components/Tarjetas/Tarjetas";
 import { useEffect, useState } from "react";
 
 // Servicios
-import { listarPersonajes } from "../../services/Personajes.services";
+import { listarPersonajes } from "../services/Personajes.services";
 
 export function Personajes() {
 
